@@ -1,3 +1,4 @@
+# rubocop:disable Lint/ScriptPermission
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
@@ -27,3 +28,4 @@ require 'rubygems'
 require 'bundler/setup'
 
 load Gem.bin_path('rspec-core', 'rspec')
+# rubocop:enable Lint/ScriptPermission
