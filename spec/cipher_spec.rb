@@ -2,10 +2,10 @@
 
 require 'ceaser_cipher'
 
-describe 'Cipher' do
-  it 'encrypts the string' do
+describe 'Encrypt' do
+  it 'encrypts the string from left or right' do
     c = Cipher.new
-    ciphered = c.cipher('one')
-    expect(ciphered).to be_truthy
+    ciphered = c.cipher('abcd', 'right', 3)
+    expect(ciphered).to eq('defg')
   end
 end
